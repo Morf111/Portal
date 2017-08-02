@@ -15,8 +15,14 @@ class GitTest
 	{
 		echo 'Function message Test';
 	}
+	
+	public function messageTestWithParam($input)
+	{
+		echo $input;
+	}	
 }
 
 $GitTest =  new GitTest();
 $GitTest->messageTest();
+$GitTest->messageTestWithParam('Test');
 ?>
